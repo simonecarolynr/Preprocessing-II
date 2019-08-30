@@ -1,1 +1,27 @@
 // Mixins in here
+
+.row() {
+    display: flex;
+    flex-direction: row;
+}
+
+.column() {
+    display: flex;
+    flex-direction: column;
+}
+
+.centered() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button(@radius, @background-color, @color, @width, @height, @font-size) {
+    border-radius: @radius;
+    background-color: @background-color;
+    color: @color;
+    width: @width;
+    height: @height;
+    font-size: @font-size;
+}
+

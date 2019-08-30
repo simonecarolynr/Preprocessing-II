@@ -1,1 +1,45 @@
 // Navigation Styles here
+
+@tablet: ~"(max-width: 500px)"; 
+
+.navigation {
+    border-bottom: 2px dashed silver;
+
+    .navigation-text {
+        .row();
+        height: 90px;
+        font-size: 2rem;
+        width: 60%;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+
+        @media @tablet {
+            
+            .column();
+            height: 85px;
+            width: 100%;
+            padding: 10px;
+
+            h1 {
+                font-size: 3rem;
+                padding: 10px auto;
+            }
+
+            a {
+                padding: 15px;
+                width: 100px;
+            }
+        }
+    
+        a {
+            align-items: center;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+        }
+    }
+}
+
+
